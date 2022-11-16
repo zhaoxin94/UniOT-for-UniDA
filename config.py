@@ -4,14 +4,22 @@ import os
 import datetime
 
 import argparse
-parser = argparse.ArgumentParser(description='Code for *UniOT for UniDA*',
-                                 formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+parser = argparse.ArgumentParser(
+    description='Code for *UniOT for UniDA*',
+    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('--gpu_index', type=str, default='0', help='')
 parser.add_argument('--exp', type=str, default='debug', help='')
 parser.add_argument('--dataset', type=str, default='office31', help='dataset')
-parser.add_argument('--source', type=str, default='amazon', help='source domain')
+parser.add_argument('--source',
+                    type=str,
+                    default='amazon',
+                    help='source domain')
 parser.add_argument('--target', type=str, default='dslr', help='target domain')
-parser.add_argument('--model_path', type=str, default=None, help='/path/to/your/model/final.pkl')
+parser.add_argument('--model_path',
+                    type=str,
+                    default=None,
+                    help='/path/to/your/model/final.pkl')
 
 parser_args = parser.parse_args()
 
@@ -39,7 +47,8 @@ source_txt = source_txt.replace("<current_dir>", current_dir)
 target_txt = args.data.dataset.t_txt_path.replace("<target>", target)
 target_txt = target_txt.replace("<current_dir>", current_dir)
 
-pretrained_model_path = args.model.pretrained_model_path.replace("<current_dir>", current_dir)
+pretrained_model_path = args.model.pretrained_model_path.replace(
+    "<current_dir>", current_dir)
 
 log_path = args.log.root_dir.replace("<exp>", parser_args.exp)
 transfer_task = f'{source}2{target}'
