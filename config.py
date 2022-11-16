@@ -38,9 +38,10 @@ else:
     target = parser_args.target
 
 # fill in <xxx> in config
-dataset_root = args.data.dataset.root_path
-
 current_dir = os.path.dirname(__file__)
+
+dataset_root = args.data.dataset.root_path.replace("<current_dir>",
+                                                   current_dir)
 
 source_txt = args.data.dataset.s_txt_path.replace("<source>", source)
 source_txt = source_txt.replace("<current_dir>", current_dir)

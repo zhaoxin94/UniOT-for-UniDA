@@ -6,6 +6,7 @@ used
 script/output
 script/myemail
 model
+data
 __pycache__
 
 script/officehome1.sh

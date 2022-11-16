@@ -1,7 +1,7 @@
 data:
   dataset:
     name: visda2017 # choices are ['office31', 'officehome', 'visda2017', 'domainnet']
-    root_path: /public/home/changwx/p300/dataset/visda2017 # /path/to/dataset/root
+    root_path: <current_dir>/data/visda # /path/to/dataset/root
     s_txt_path: <current_dir>/txt/visda/<source>.txt # /path/to/source_txt
     t_txt_path: <current_dir>/txt/visda/<target>.txt # /path/to/target_txt
     source_default: Syn # source domain

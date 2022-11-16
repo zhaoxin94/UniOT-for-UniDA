@@ -1,7 +1,7 @@
 data:
   dataset:
     name: office31 # choices are ['office31', 'officehome', 'visda2017', 'domainnet']
-    root_path: /public/home/changwx/p300/dataset/office31/images # /path/to/dataset/root
+    root_path: <current_dir>/data/office31 # /path/to/dataset/root
     s_txt_path: <current_dir>/txt/office31/<source>.txt # /path/to/source_txt
     t_txt_path: <current_dir>/txt/office31/<target>.txt # /path/to/target_txt
     source_default: amazon # source domain
