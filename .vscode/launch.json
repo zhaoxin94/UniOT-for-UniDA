@@ -19,7 +19,7 @@
                 "--dataset",
                 "office31",
                 "--source",
-                "amzon",
+                "amazon",
                 "--target",
                 "dslr"
             ]
